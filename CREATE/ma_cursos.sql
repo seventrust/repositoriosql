@@ -1,6 +1,7 @@
 CREATE TABLE bibliotecas.ma_cursos_moodle (
 	mcm_id INT auto_increment PRIMARY KEY NOT NULL COMMENT 'Id incremental de la tabla',
 	mcm_id_moodle INT NULL COMMENT 'Id del curso en Mooodle',
+	mcm_course_name varchar(400) NOT NULL COMMENT 'Nombre del curso',
 	mcm_start_date DATETIME NULL COMMENT 'Fecha (y hora) de inicio del curso',
 	mcm_end_date DATETIME NULL COMMENT 'Fecha (y hora) de finalización del curso',
 	mcm_course_type VARCHAR(100) NULL COMMENT 'Tipo de curso (autoaprendizaje, bajo nivel tutoría, alto nivel de tutoría',

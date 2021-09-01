@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="bibliotecas_tctp.erd">
+	<entities>
+		<data-source id="mariaDB-17ba1c81c27-63e2f9f1b5b2e686">
+			<entity id="1" name="ma_actividades" fq-name="bibliotecas.ma_actividades" order="0" x="340" y="560">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="2" name="ma_convocatorias" fq-name="bibliotecas.ma_convocatorias" order="1" x="880" y="100">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="3" name="ma_cursos_moodle" fq-name="bibliotecas.ma_cursos_moodle" order="2" x="620" y="80">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="4" name="ma_identificacion_usuario" fq-name="bibliotecas.ma_identificacion_usuario" order="3" x="20" y="0">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="5" name="mv_acceso_plataforma" fq-name="bibliotecas.mv_acceso_plataforma" order="4" x="580" y="560">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="6" name="mv_actividades_usuarios" fq-name="bibliotecas.mv_actividades_usuarios" order="5" x="20" y="560">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="7" name="mv_cursos_usuarios" fq-name="bibliotecas.mv_cursos_usuarios" order="6" x="320" y="0">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="8" name="mv_encuestas_satisfaccion" fq-name="bibliotecas.mv_encuestas_satisfaccion" order="7" x="140" y="400">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="9" name="mv_estado_aprendiz" fq-name="bibliotecas.mv_estado_aprendiz" order="8" x="620" y="340">
+				<path name="bibliotecas"/>
+			</entity>
+			<entity id="10" name="mv_cursos_tutores" fq-name="bibliotecas.mv_cursos_tutores" order="9" x="320" y="200">
+				<path name="bibliotecas"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_mv_actividades_usuarios_ma_actividades" type="vfk" pk-ref="1" fk-ref="6"/>
+		<relation name="vfk_ma_cursos_moodle_ma_convocatorias" type="vfk" pk-ref="2" fk-ref="3"/>
+		<relation name="vfk_mv_cursos_usuarios_ma_cursos_moodle" type="vfk" pk-ref="3" fk-ref="7"/>
+		<relation name="vfk_mv_cursos_tutores_ma_cursos_moodle" type="vfk" pk-ref="3" fk-ref="10"/>
+		<relation name="vfk_mv_estado_aprendiz_ma_cursos_moodle" type="vfk" pk-ref="3" fk-ref="9"/>
+		<relation name="vfk_ma_actividades_mv_acceso_plataforma" type="vfk" pk-ref="5" fk-ref="1"/>
+		<relation name="vfk_ma_identificacion_usuario_mv_acceso_plataforma" type="vfk" pk-ref="5" fk-ref="4"/>
+		<relation name="vfk_ma_identificacion_usuario_mv_actividades_usuarios" type="vfk" pk-ref="6" fk-ref="4"/>
+		<relation name="vfk_ma_identificacion_usuario_mv_cursos_usuarios" type="vfk" pk-ref="7" fk-ref="4"/>
+		<relation name="vfk_ma_identificacion_usuario_mv_encuestas_satisfaccion" type="vfk" pk-ref="8" fk-ref="4"/>
+		<relation name="vfk_ma_identificacion_usuario_mv_estado_aprendiz" type="vfk" pk-ref="9" fk-ref="4"/>
+		<relation name="vfk_ma_identificacion_usuario_mv_cursos_tutores" type="vfk" pk-ref="10" fk-ref="4"/>
+	</relations>
+</diagram>
