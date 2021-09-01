@@ -26,11 +26,11 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
+<h4 align="center"> 
 	🚧  RepositorioSQL 🚀 Under construction...  🚧
 </h4> 
 
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -46,7 +46,8 @@
 
 ## :dart: About ##
 
-Describe your project
+Proyecto para almacenar los cambios del modelo de datos para 
+proyecto Bibliotecas CRA
 
 ## :sparkles: Features ##
 
@@ -54,45 +55,24 @@ Describe your project
 :heavy_check_mark: Feature 2;\
 :heavy_check_mark: Feature 3;
 
-## :rocket: Technologies ##
+## :rocket: Tecnologías ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [MariaDB](https://mariadb.org/)
+- [Dbeaver](https://dbeaver.io)
 
-## :white_check_mark: Requirements ##
+## :white_check_mark: Requisitos ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Antes de empezar :checkered_flag:, debes instalar al menos [Dbeaver](https://dbeaver.io) para 
+visualizar los DDL y el ERD
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Como empezar ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/repositoriosql
+$ git clone https://github.com/seventrust/repositoriosql
 
-# Access
-$ cd repositoriosql
-
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
 ```
-
-## :memo: License ##
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
-
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
-
-&#xa0;
 
 <a href="#top">Back to top</a>
