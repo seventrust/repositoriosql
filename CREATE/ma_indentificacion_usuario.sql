@@ -1,7 +1,6 @@
 CREATE TABLE bibliotecas.ma_identificacion_usuario (
-	miu_id INT auto_increment PRIMARY KEY NOT NULL COMMENT 'Id incremental de la tabla',
-	miu_user_id INT NOT NULL COMMENT 'ID que entrega Modle',
-	miu_user_rut varchar(10) NULL COMMENT 'RUT del usuario ',
+	miu_user_id INT NOT NULL COMMENT PRIMARY KEY 'ID que entrega Moodle',
+	miu_user_rut varchar(20) NOT NULL COMMENT 'RUT del usuario ',
 	miu_user_name VARCHAR(100) NULL COMMENT 'Nombre del usuario',
 	miu_user_lastname varchar(100) NULL COMMENT 'Apellido(s) del usuario',
 	miu_user_birth_day DATE NULL COMMENT 'Fecha de naciemiento del usuario',

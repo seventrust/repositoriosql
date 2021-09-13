@@ -1,6 +1,7 @@
 CREATE TABLE bibliotecas.mv_actividades_usuarios (
         mau_id INT auto_increment PRIMARY KEY NOT NULL COMMENT 'Id incremental de la tabla',
         mau_user_id INT NOT NULL COMMENT 'Id del usuario que realizó la actividad',
+        mau_user_rut VARCHAR(20) NOT NULL COMMENT 'Rut del usuario que realiza la actividad',
         mau_date_activity_done DATETIME NOT NULL COMMENT 'Fecha de la realización de la actividad',
         mau_activity_grade DOUBLE NULL COMMENT 'Calificación de la actividad a nivel de usuario',
         mau_date_created DATETIME NOT NULL COMMENT 'Fecha de creación del registro',

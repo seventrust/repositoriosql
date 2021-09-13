@@ -1,6 +1,7 @@
 CREATE TABLE bibliotecas.mv_cursos_usuarios (
 	mcu_id INT auto_increment PRIMARY KEY NOT NULL COMMENT 'Id incremental de la tabla',
-	mcu_user_id INT NOT NULL COMMENT 'Id del usuario enrtolado en el curso',
+	mcu_user_id INT NOT NULL COMMENT 'Id del usuario enrolado en el curso',
+	mcu_user_rut VARCHAR(20) NOT NULL COMMENT 'Rut del usuario enrolado en el curso',
 	mcu_course_id int DEFAULT NULL COMMENT 'Id del curso',
 	mcu_course_status TINYINT NULL COMMENT 'Estado del usuario respecto al curso, aprobado o reprobado',
 	mcu_date_created DATETIME NOT NULL COMMENT 'Fecha creaciòn del registro',
